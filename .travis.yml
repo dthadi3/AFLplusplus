@@ -18,6 +18,15 @@ matrix:
   - os: linux
     dist: xenial
     env: NAME="xenial-amd64" MODERN="no" GCC="5" EXTRA="libtool-bin clang-6.0"
+  # Added power jobs
+  - os: linux
+    arch: ppc64le
+    dist: bionic
+    env: NAME="bionic-amd64" MODERN="yes" GCC="7"
+  - os: linux
+    arch: ppc64le
+    dist: xenial
+    env: NAME="xenial-amd64" MODERN="no" GCC="5" EXTRA="libtool-bin clang-6.0"
 #  - os: linux # disabled: fatal: unable to access 'https://git.qemu.org/git/capstone/': gnutls_handshake() failed: Handshake failed
 #    dist: trusty
 #    env: NAME="trusty-amd64" MODERN="no" GCC="4.8"
